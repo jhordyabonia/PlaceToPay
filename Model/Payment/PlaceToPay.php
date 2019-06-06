@@ -1,7 +1,7 @@
 <?php
 
 
-namespace VexSoluciones\PlaceToPay\Model\Payment;
+namespace AgSoftware\PlaceToPay\Model\Payment;
 
 class PlaceToPay extends \Magento\Payment\Model\Method\AbstractMethod
 {

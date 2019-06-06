@@ -6,7 +6,7 @@ define(
         'use strict';
         return Component.extend({
             defaults: {
-                template: 'VexSoluciones_PlaceToPay/payment/place_to_pay'
+                template: 'AgSoftware_PlaceToPay/payment/place_to_pay'
             },
             getMailingAddress: function () {
                 return window.checkoutConfig.payment.checkmo.mailingAddress;

@@ -1,6 +1,6 @@
 <?php
 
-namespace VexSoluciones\PlaceToPay\Controller\Success;
+namespace AgSoftware\PlaceToPay\Controller\Success;
 
 use Magento\Framework\App\ResponseInterface;
 use Magento\Framework\App\Action\Context;

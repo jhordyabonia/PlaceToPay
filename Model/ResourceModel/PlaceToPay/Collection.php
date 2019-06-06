@@ -1,7 +1,7 @@
 <?php
 
 
-namespace VexSoluciones\PlaceToPay\Model\ResourceModel\PlaceToPay;
+namespace AgSoftware\PlaceToPay\Model\ResourceModel\PlaceToPay;
 
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {
@@ -14,8 +14,8 @@ class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\Ab
     protected function _construct()
     {
         $this->_init(
-            \VexSoluciones\PlaceToPay\Model\PlaceToPay::class,
-            \VexSoluciones\PlaceToPay\Model\ResourceModel\PlaceToPay::class
+            \AgSoftware\PlaceToPay\Model\PlaceToPay::class,
+            \AgSoftware\PlaceToPay\Model\ResourceModel\PlaceToPay::class
         );
     }
 }

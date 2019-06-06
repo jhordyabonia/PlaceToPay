@@ -6,7 +6,7 @@
 var config = {
     map: {
         '*': {
-            popup:'VexSoluciones_PlaceToPay/js/popup',
+            popup:'AgSoftware_PlaceToPay/js/popup',
         }
     }
 };

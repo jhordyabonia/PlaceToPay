@@ -1,7 +1,7 @@
 <?php
 
 
-namespace VexSoluciones\PlaceToPay\Block;
+namespace AgSoftware\PlaceToPay\Block;
 use \Datetime;
 use \Datetimezone;
 

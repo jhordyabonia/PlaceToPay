@@ -4,7 +4,7 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
         <route id="placetopay" frontName="placetopay">
-            <module name="VexSoluciones_PlaceToPay"/>
+            <module name="AgSoftware_PlaceToPay"/>
         </route>
     </router>
 </config>

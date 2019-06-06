@@ -1,7 +1,7 @@
 <?php
 
 
-namespace VexSoluciones\PlaceToPay\Observer\Frontend\Checkout;
+namespace AgSoftware\PlaceToPay\Observer\Frontend\Checkout;
 
 class OnepageControllerSuccessAction implements \Magento\Framework\Event\ObserverInterface
 {

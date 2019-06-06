@@ -4,7 +4,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace  VexSoluciones\PlaceToPay\Setup;
+namespace  AgSoftware\PlaceToPay\Setup;
 
 use Magento\Framework\Setup\InstallDataInterface;
 use Magento\Framework\Setup\ModuleContextInterface;

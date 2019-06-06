@@ -1,5 +1,5 @@
 {
-    "name": "vexsoluciones/module-placetopay",
+    "name": "agsoftware/module-placetopay",
     "description": "",
     "type": "magento2-module",
     "license": "proprietary",
@@ -20,7 +20,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "VexSoluciones\\PlaceToPay\\": ""
+            "AgSoftware\\PlaceToPay\\": ""
         }
     }
 }

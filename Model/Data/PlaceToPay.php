@@ -1,9 +1,9 @@
 <?php
 
 
-namespace VexSoluciones\PlaceToPay\Model\Data;
+namespace AgSoftware\PlaceToPay\Model\Data;
 
-use VexSoluciones\PlaceToPay\Api\Data\PlaceToPayInterface;
+use AgSoftware\PlaceToPay\Api\Data\PlaceToPayInterface;
 
 class PlaceToPay extends \Magento\Framework\Api\AbstractExtensibleObject implements PlaceToPayInterface
 {
@@ -20,7 +20,7 @@ class PlaceToPay extends \Magento\Framework\Api\AbstractExtensibleObject impleme
      /**
      * Set placeToPay_id
      * @param string $placeToPay_id
-     * @return  \VexSoluciones\PlaceToPay\Api\Data\PlaceToPayInterface
+     * @return  \AgSoftware\PlaceToPay\Api\Data\PlaceToPayInterface
      */
     public function setPlaceToPayId($placeToPay_id)
     {
@@ -39,7 +39,7 @@ class PlaceToPay extends \Magento\Framework\Api\AbstractExtensibleObject impleme
     /**
      * Set increment_id
      * @param string $incrementId
-     * @return \VexSoluciones\PlaceToPay\Api\Data\PlaceToPayInterface
+     * @return \AgSoftware\PlaceToPay\Api\Data\PlaceToPayInterface
      */
     public function setIncrementId($incrementId)
     {
@@ -59,7 +59,7 @@ class PlaceToPay extends \Magento\Framework\Api\AbstractExtensibleObject impleme
     /**
      * Set response
      * @param string $response
-     * @return \VexSoluciones\PlaceToPay\Api\Data\PlaceToPayInterface
+     * @return \AgSoftware\PlaceToPay\Api\Data\PlaceToPayInterface
      */
     public function setResponse($response)
     {
@@ -78,7 +78,7 @@ class PlaceToPay extends \Magento\Framework\Api\AbstractExtensibleObject impleme
     /**
      * Set form_data
      * @param string $form_data
-     * @return  \VexSoluciones\PlaceToPay\Api\Data\PlaceToPayInterface
+     * @return  \AgSoftware\PlaceToPay\Api\Data\PlaceToPayInterface
      */
     public function setFormData($form_data)
     {

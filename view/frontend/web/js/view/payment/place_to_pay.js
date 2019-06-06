@@ -11,7 +11,7 @@ define(
         rendererList.push(
             {
                 type: 'place_to_pay',
-                component: 'VexSoluciones_PlaceToPay/js/view/payment/method-renderer/place_to_pay-method'
+                component: 'AgSoftware_PlaceToPay/js/view/payment/method-renderer/place_to_pay-method'
             }
         );
         return Component.extend({});

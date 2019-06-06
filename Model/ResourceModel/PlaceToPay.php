@@ -1,7 +1,7 @@
 <?php
 
 
-namespace VexSoluciones\PlaceToPay\Model\ResourceModel;
+namespace AgSoftware\PlaceToPay\Model\ResourceModel;
 
 class PlaceToPay extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 {
@@ -13,6 +13,6 @@ class PlaceToPay extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
      */
     protected function _construct()
     {
-        $this->_init('vexsoluciones_placeToPay', 'payTolLace_id');
+        $this->_init('agsoftware_placeToPay', 'payTolLace_id');
     }
 }
