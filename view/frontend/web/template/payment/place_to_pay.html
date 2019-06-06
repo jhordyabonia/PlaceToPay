@@ -1,0 +1,126 @@
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<div class="payment-method" data-bind="css: {'_active': (getCode() == isChecked())}">
+    <div class="payment-method-title field choice">
+        <input type="radio"
+               name="payment[method]"
+               class="radio"
+               data-bind="attr: {'id': getCode()}, value: getCode(), checked: isChecked, click: selectPaymentMethod, visible: isRadioButtonVisible()"/>
+        <label data-bind="attr: {'for': getCode()}" class="label"><span data-bind="text: getTitle()"></span></label>
+    </div>
+    <div class="payment-method-content">
+        <!-- ko foreach: getRegion('messages') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+        <!--/ko-->
+        <div class="payment-method-billing-address">
+            <!-- ko foreach: $parent.getRegion(getBillingAddressFormName()) -->
+            <!-- ko template: getTemplate() --><!-- /ko -->
+            <!--/ko-->
+        </div><?php
+        /**
+         * Copyright © Magento, Inc. All rights reserved.
+         * See COPYING.txt for license details.
+         */
+        
+        // @codingStandardsIgnoreFile
+        ?>
+        <!--popup.php-->
+        <div id="_form_placeToPay" style="display:none">  
+          <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+       
+               <div class="payment-cards">
+                    <span class="left">
+                    <img src="https://sandbox.2checkout.com/static/checkout/Visa.png" alt="Visa" title="Visa">
+                    <img src="https://sandbox.2checkout.com/static/checkout/MasterCard.png" alt="MasterCard" title="MasterCard">
+                    
+                    
+                    <img src="https://sandbox.2checkout.com/static/checkout/AmEx.png" alt="Amex" title="Amex">
+                    
+                    <img src="https://sandbox.2checkout.com/static/checkout/Discover.png" alt="DiscoverCard" title="DiscoverCard">
+                    <img src="https://sandbox.2checkout.com/static/checkout/JCB.png" alt="JCB" title="JCB">
+                    <img src="https://sandbox.2checkout.com/static/checkout/DinersClub.png" alt="Diners Club" title="Diners Club">
+                    <img src="https://sandbox.2checkout.com/static/checkout/DebitCard.png" alt="Debit Card" title="Debit Card">
+                    
+                    </span>
+                  </div>
+        
+        
+          <table class="hidden-mobile" style="width: 45%;">
+            <thead></thead>
+            <tbody>
+            <tr style="padding: 0px 10px;">
+              <td align="left" colspan="2">
+                <span>
+                <ion-icon name="card"></ion-icon>  Card Number <span class="required">*</span></span>
+                <br>
+                <input class="input" name="number_card" style="width:100%">
+              </td>
+            </tr>
+            <tr  style="padding: 0px 10px;">
+              <td align="left" colspan="1">
+                
+                <span><ion-icon name="person"></ion-icon>  Name <span class="required">*</span></span>
+                <br>
+                <input class="input" name="number_card" style="width:100%">
+              </td>
+        
+              <td align="left" colspan="1">
+                <span> <ion-icon name="person"></ion-icon> Last Name <span class="required">*</span></span>
+                <br>
+                <input class="input" name="name_card" style="width:100%">
+              </td>
+            </tr>
+            <tr  style="padding: 0px 10px;">
+              <td align="left" colspan="2">
+              
+              <span><ion-icon name="mail"></ion-icon>   Email <span class="required">*</span></span>
+                <br>
+                <input class="input" name="email_card" style="width:100%">
+              </td>
+            </tr>
+            <tr  style="padding: 0px 10px;">
+              <td align="left" >
+                 
+                <span><ion-icon name="calendar"></ion-icon>Expiration date<span class="required">*</span></span>
+                <br>
+                <input class="input" name="expiry" style="width:100%" placeholder="MM/YY">
+              </td>
+              <td align="left" style="padding-left: 25px;">
+                <span><ion-icon name="card"></ion-icon>  Card Code <span class="required">*</span></span>
+                <input class="input" name="code_card" maxlength="3" size="11">
+              </td>
+            </tr>
+            
+            </tbody>
+          </table>
+        </div>
+        
+        <!--end popup.php-->
+        <p data-bind="html: getInstructions()"></p>
+        <div class="checkout-agreements-block">
+            <!-- ko foreach: $parent.getRegion('before-place-order') -->
+                <!-- ko template: getTemplate() --><!-- /ko -->
+            <!--/ko-->
+        </div>
+        <div class="actions-toolbar">
+            <div class="primary">
+                <button class="action primary checkout"
+                        type="submit"
+                        data-bind="
+                        click: placeOrder,
+                        attr: {title: $t('Place Order')},
+                        css: {disabled: !isPlaceOrderActionAllowed()},
+                        enable: (getCode() == isChecked())
+                        "
+                        disabled>
+                    <span data-bind="i18n: 'Place Order'"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+        

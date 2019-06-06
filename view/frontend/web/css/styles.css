@@ -1,0 +1,82 @@
+.hydrated {
+  visibility: inherit;
+  font-size: x-large;
+  margin-bottom: -7px;
+}
+
+.content-title{
+    font-size: 20px;
+}
+.poPlaceToPay{
+    line-height: 2.2rem;
+    padding: 14px 0px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.input{
+    height: 20px;
+    padding: 5px;
+    margin-top: 3px;
+}
+.required{
+    color:red;
+}
+
+.swal-text{
+    display:none;
+}
+.swal-footer{
+    text-align: center;
+}
+.visible-mobile{
+  display:block;
+}
+.hidden-mobile{
+  display:none;
+}
+.btn-popup{
+  cursor:pointer;
+  float: right;
+}
+.delete-from-cart{
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.relationate-item {
+  display: inline-block;
+  max-width: 50px;
+}
+@media (min-width: 720px) {
+  .visible-mobile{
+    display:none;
+  }  
+  .hidden-mobile{
+    display:block;
+  }
+  .swal-modal{
+    width: 350px;
+  }
+  .swal-content {
+    font-size: small;
+  }
+
+/*
+  .swal-footer{
+    display:none;
+  }
+  .swal-modal{
+    width: 900px;
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
+    border-radius: 0;
+    min-height: 400px;
+  }
+  .relationate-item {
+    max-width: 180px;
+    height: 280px;
+    overflow: hidden;
+  }
+*/
+}

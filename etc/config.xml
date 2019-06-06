@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<payment>
+			<place_to_pay>
+				<active>1</active>
+				<test>1</test>
+				<model>VexSoluciones\PlaceToPay\Model\Payment\PlaceToPay</model>
+				<order_status>pending</order_status>
+				<title>Place to Pay</title>
+				<number_account>612a7791ce6550beb4c8e1bf6477654b</number_account>
+				<private_key>oGW5sHxI8P4zKqJN</private_key>
+				<allowspecific>0</allowspecific>
+				<group>online</group>
+			</place_to_pay>
+		</payment>
+	</default>
+</config>
