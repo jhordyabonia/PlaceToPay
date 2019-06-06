@@ -1,3 +1,15 @@
+#month #day{
+  height: 20px;
+  margin-top: 3px;
+}
+.available_franchises{
+  text-align: center;
+  width: 50%;
+}
+.franchise{
+  width: 40px;
+}
+
 .hydrated {
   visibility: inherit;
   font-size: x-large;
