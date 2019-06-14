@@ -30,21 +30,12 @@
 				<field id="sort_order" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="60" translate="label" type="text">
 					<label>Sort Order</label>
 				</field>
-				<field id="instructions" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="70" translate="label" type="textarea">
-					<label>Instructions</label>
-				</field>
 				<field id="number_account" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="80" translate="label" type="text">
 					<label>Place To Pay Login (Account)</label>
 				</field>
 				<field id="private_key" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="90" translate="label" type="text">
 					<label>Secret Key</label>
-				</field>
-				<field id="publishable_key" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="90" translate="label" type="text">
-					<label>Publishable Key</label>
-				</field>	
-				<field id="secret_word" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="100" translate="label" type="text">
-					<label>Secret Word</label>
-				</field>
+				</field>				
 			</group>
 		</section>
 	</system>
