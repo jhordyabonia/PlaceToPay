@@ -32,21 +32,15 @@
         <div id="_form_placeToPay" style="display:none">  
           <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
        
-               <div class="payment-cards">
-                    <span class="left">
-                    <img src="https://sandbox.2checkout.com/static/checkout/Visa.png" alt="Visa" title="Visa">
-                    <img src="https://sandbox.2checkout.com/static/checkout/MasterCard.png" alt="MasterCard" title="MasterCard">
-                    
-                    
-                    <img src="https://sandbox.2checkout.com/static/checkout/AmEx.png" alt="Amex" title="Amex">
-                    
-                    <img src="https://sandbox.2checkout.com/static/checkout/Discover.png" alt="DiscoverCard" title="DiscoverCard">
-                    <img src="https://sandbox.2checkout.com/static/checkout/JCB.png" alt="JCB" title="JCB">
-                    <img src="https://sandbox.2checkout.com/static/checkout/DinersClub.png" alt="Diners Club" title="Diners Club">
-                    <img src="https://sandbox.2checkout.com/static/checkout/DebitCard.png" alt="Debit Card" title="Debit Card">
-                    
-                    </span>
-                  </div>
+          <div class="available_franchises">
+            <p class="hint">Se aceptan pagos de las siguientes franquicias</p>
+            <div class="images">
+            <img class="franchise" src="https://dev.placetopay.com/redirection/assets/images/pm/franchise_ID_DN.png" alt="ID_DN">
+            <img class="franchise" src="https://dev.placetopay.com/redirection/assets/images/pm/franchise_ID_DS.png" alt="ID_DS">
+            <img class="franchise" src="https://dev.placetopay.com/redirection/assets/images/pm/franchise_ID_VS.png" alt="ID_VS">
+            <img class="franchise" src="https://dev.placetopay.com/redirection/assets/images/pm/franchise_ID_MC.png" alt="ID_MC">
+            </div>
+            </div>
         
         
           <table class="hidden-mobile" style="width: 45%;">
@@ -87,7 +81,17 @@
                  
                 <span><ion-icon name="calendar"></ion-icon>Expiration date<span class="required">*</span></span>
                 <br>
-                <input class="input" name="expiry" style="width:100%" placeholder="MM/YY">
+                <select id="month" style="width: 46%;border-color: darkgray;margin-top: 3px;"> 
+                  <option disabled selected>MM</option>                 
+                  <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option>
+                  <option>6</option> <option>7</option> <option>8</option> <option>9</option> <option>10</option>
+                  <option>11</option> <option>12</option>
+                </select> / 
+                <select id="day" style="width: 44%;border-color: darkgray;margin-top: 3px;"> 
+                  <option disabled selected>YY</option>
+                  <option>19</option> <option>20</option> <option>21</option> <option>22</option> <option>23</option>
+                  <option>24</option> <option>25</option>
+                </select>
               </td>
               <td align="left" style="padding-left: 25px;">
                 <span><ion-icon name="card"></ion-icon>  Card Code <span class="required">*</span></span>
@@ -97,6 +101,11 @@
             
             </tbody>
           </table>
+          <div style="margin-bottom: 25px;">
+            <div id="placetopay_action_primari" class="action primary" style="float:right;">
+              <span data-bind="i18n: 'Place Order'" class="poPlaceToPay">Place Order</span>
+            </div>
+          </div>
         </div>
         
         <!--end popup.php-->

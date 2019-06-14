@@ -5,6 +5,7 @@
 			<place_to_pay>
 				<active>1</active>
 				<test>1</test>
+				<url_api>https://dev.placetopay.com/redirection/api/session</url_api>
 				<model>AgSoftware\PlaceToPay\Model\Payment\PlaceToPay</model>
 				<order_status>pending</order_status>
 				<title>Place to Pay</title>

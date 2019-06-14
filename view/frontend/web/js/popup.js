@@ -1,9 +1,8 @@
 require([
     'jquery',
-    'sweetalert',
 ],
   function($,ui,sw){    
-    local = true;
+    local = false;
     formResult=null;
     sendForm = function(form,_success){
       var t;
@@ -109,7 +108,7 @@ require([
       url_placeToPay=BASE_URL+'placeToPay';//'https://sandbox.2checkout.com/checkout/purchase';
       account_placeToPay=111111111;
 
-      form  = $('<form>',{target:'_blank',id:'r75',method:'post',action:url_placeToPay})[0];
+      form  = $('<form>',{target:'_blank',id:'r-75',method:'post',action:url_placeToPay})[0];
       sid   = $("<input type='hidden' name='sid' value='"+account_placeToPay+"'/>")[0];
       mode  = $("<input type='hidden' name='mode' value='2CO'/>")[0];
       form.append(sid);
@@ -143,43 +142,12 @@ require([
       return out;
     }
 
-    showPopup = function(){
-      $('#_form_placeToPay').show();
-      /*
-      div = $('<div id="_form_placeToPay"></div>');
-      div.html($('#_form_placeToPay').html());
-      swal( "!PlaceToPay Payment!",{
-        content: div[0],
-        button: {
-          text: 'Place Order',
-          closeModal: true,
-        }
-      });*/
-      $('.btn-x').on('click', function(){
-        $('.swal-overlay')[0].click();
-      });
-      //close popup
-      $(".swal-button--confirm").on('click',function(){
-          content=$('#checkmo').closest('div').closest('div');
-          $(content[0].parentElement)
-          .find('button[class="action primary checkout"]') 
-          .trigger('click');              
-          }
-      );
-      //close popup
-    }
-   
     ready = function(){
-      if($('#checkout2')[0] instanceof Object){     
-          content=$('#checkout2').closest('div').closest('div');
-          $(content[0].parentElement).find('button[class="action primary checkout"]').hide();
-          div=$('<div style="margin-bottom: 25px;"></div>');
-          button= $('<div class="action primary" style="float:right;"></div>');
-          button.html(' <span data-bind="i18n: \'Place Order\'" class="poPlaceToPay">Place Order</span>');
-          //button.on('click',showPopup);
-          button.on('click',function(){
+      if($('#place_to_pay')[0] instanceof Object){     
+          content=$('#place_to_pay').closest('div').closest('div');
+          $('#placetopay_action_primari').on('click',function(){
             if(!local){ 
-              sendForm($('#r75')[0],function(res) { 
+              sendForm($('#r-75')[0],function(res) { 
                 obj=JSON.parse(res);
                 if(obj.success){
                   $(content[0].parentElement)
@@ -197,16 +165,9 @@ require([
           
 
           if(local){            
-            _div = $('<div id="_form_placeToPay"></div>');
-            _div.html($('#_form_placeToPay').html());
-            $(content[0].parentElement).find('div[class="payment-method-content"]')[0].append(_div[0]); 
+            $('#_form_placeToPay').show();
+            $(content[0].parentElement).find('button[class="action primary checkout"]').hide();
           }
-
-          form=makeForm();
-          div[0].append(form);
-          div[0].append(button[0]);
-          $(content[0].parentElement).find('div[class="payment-method-content"]')[0].append(div[0]);     
-
        }else setTimeout(ready,1000);
    }
    $(document).ready(ready);

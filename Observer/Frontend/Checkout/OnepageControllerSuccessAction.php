@@ -48,7 +48,9 @@ class OnepageControllerSuccessAction implements \Magento\Framework\Event\Observe
     }
     private function send($obj){
         
-        $url = "https://dev.placetopay.com/redirection/api/session";
+        $url = $this->getConfigData('url_api');
+        if(trim($url)==null)
+            $url = "https://dev.placetopay.com/redirection/api/session";
         if($this->getConfigData('test'))
             $url = "https://test.placetopay.ec/redirection/api/session";
 

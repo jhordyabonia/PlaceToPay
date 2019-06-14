@@ -29,7 +29,7 @@ class Index extends \Magento\Framework\App\Action\Action
         return $this->_objectManager->get(\Magento\Checkout\Model\Type\Onepage::class);
     }
     public function execute()
-    {       
+    {     
         if(!isset($_GET['quote_id'])){
             return $this->resultRedirectFactory->create()->setPath('checkout/cart');
         }
